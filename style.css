@@ -349,5 +349,53 @@ template {
 }
 
 /************************ start project *******************************/
+html{
+    box-sizing: border-box;
+}
 
+*,*::after, *::before{
+    box-sizing: inherit;
+}
 
+body{
+    font-family: 'Open Sans';
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+padding: 0;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/fonts/static/OpenSans-Bold.ttf);
+    src: url(/fonts/static/OpenSans-Regular.ttf);
+    src: url(/fonts/static/OpenSans-Light.ttf);
+    src: url(/fonts/static/OpenSans-Medium.ttf);
+}
+
+.top-header{
+    background-color: #333745;
+    color: #fff;
+    padding: 8px;
+    
+}
+
+.top-header-container{
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.top-header-contacs{
+    display: flex;
+}
+
+.top-header-socials{
+    display: flex;
+}
+
+.top-header-socials p,i{
+    margin: 0 5px;
+}

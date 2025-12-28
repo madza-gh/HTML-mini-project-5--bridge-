@@ -408,6 +408,8 @@ ul {
   font-weight: 700;
 }
 
+/************************ header *******************************/
+
 .top-header {
   background-color: #333745;
   color: #fff;
@@ -419,7 +421,7 @@ ul {
   color: #fff;
 }
 
-.container {
+.container-header {
   width: 70rem;
   display: flex;
   justify-content: space-between;
@@ -441,6 +443,8 @@ a {
 .top-header-email {
   color: #f2d03b;
 }
+
+/************************ header nav *******************************/
 
 .bottom-header {
   border-bottom: 1px #dddddd solid;
@@ -494,4 +498,67 @@ a {
 
 .menu-search:hover {
   color: #999;
+}
+
+/************************ header image *******************************/
+
+.header-image{
+  background-image: url(./pics/header-image.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+
+.container{
+  width: 70rem;
+  margin: 0 auto;
+}
+
+.header-image-wrapper{
+  max-width: 35rem;
+  padding: 8rem 0;
+}
+
+.header-image-title{
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  color: #222;
+}
+
+.header-image-info{
+  margin: 2rem 0;
+  color: #666;
+  line-height: 1.9;
+  max-width: 30rem;
+  font-size: 1.2rem;
+}
+
+.header-image-link{
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.header-image-link:nth-child(1){
+  background-color:#f2d03b ;
+  border: 1px solid transparent;
+}
+
+.header-image-link:nth-child(1):hover{
+  background-color:#fff;
+  color: #f2d03b;
+  border: 1px solid #f2d03b;
+}
+
+.header-image-link:nth-child(2){
+  background-color:#333745 ;
+  border: 1px solid transparent;
+}
+
+.header-image-link:nth-child(2):hover{
+  background-color:#fff;
+  color: #333745;
+  border: 1px solid #333745;
 }

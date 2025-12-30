@@ -386,7 +386,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul,li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -442,6 +442,7 @@ ul {
 
 .top-header-socials {
   display: flex;
+  align-items: center;
 }
 
 .top-header-socials p,
@@ -530,7 +531,7 @@ a {
 .header-image-title{
   font-size: 2rem;
   text-transform: uppercase;
-
+  position: relative;
   color: #222;
 }
 
@@ -626,8 +627,120 @@ a {
   margin-bottom: 2rem;
   text-transform: uppercase;
   font-size: 18px;
+  position: relative;
 }
 
 .about-info p{
   margin-bottom: 2rem;
+}
+
+.skills-wrapper{
+  display: flex;
+  margin: 5rem 0;
+}
+
+.skills-left{
+  flex-basis: 60%;
+}
+
+.skills-left h3{
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.skills-left  li{
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.skills-left  li:hover{
+  cursor: pointer;
+}
+
+.skills-left h4{
+  transition: all 0.4s;
+  color: #666;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.skills-left h4:hover{
+  color: #f2d03b;
+}
+
+.skills-left i{
+  color: #666 ;
+}
+
+.skills-left span{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.skills-right{
+  flex-basis: 40%;
+}
+
+.skills-right h3{
+  text-transform: uppercase;
+  position: relative;
+}
+
+.skills-right h3::after, .skills-left h3::after, .about-info h2::after, .header-image-title::after{
+  content: "";
+  background-color: #f2d03b;
+  position: absolute;
+  height: 5px;
+  width: 40px;
+  bottom: -20px;
+  left: 0;
+  
+}
+
+.skill-info{
+  margin: 3rem 0;
+}
+
+.skill-progresses{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-content{
+  text-align: center;
+}
+
+.skill-progress{
+  width: 8rem;
+  height: 8.5rem;
+  background-color: #eeeeee;
+  position: relative;
+}
+
+.skill-percentage.Consultancy{
+  width: 8rem;
+  height: 39%;
+  background-color: #f2d03b;
+  position: absolute;
+  bottom: 0;
+}
+
+.skill-percentage.Funding{
+  width: 8rem;
+  height: 54%;
+  background-color: #666;
+  position: absolute;
+  bottom: 0;
+}
+
+.skill-percentage.Investment{
+  width: 8rem;
+  height: 78%;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
 }

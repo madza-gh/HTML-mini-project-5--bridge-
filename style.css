@@ -744,3 +744,125 @@ a {
   position: absolute;
   bottom: 0;
 }
+
+/************************* footer ***************************/
+
+.footer{
+  background-color: #333745;
+  font-weight: 300;
+  color:#fff;
+}
+
+.footer h4{
+  color: #fff;
+}
+
+.footer-wrapper{
+  display: flex;
+  padding: 5rem 0;
+}
+
+.footer-left{
+  flex: 1;
+}
+
+.footer-left p{
+  margin: 2rem 0;
+  color: #fff;
+}
+
+.footer-left a{
+  display: inline-flex;
+  background-color: #666;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.footer-left a:hover{
+  background-color: #f2d03b;
+}
+
+.footer-left i{
+  color: #333745;
+  font-size: 1rem;
+}
+
+.footer-middle{
+  padding: 0 3rem;
+  flex: 1;
+}
+
+.footer-middle ul{
+  margin: 2rem 0;
+}
+
+.footer-middle li{
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.footer-right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right h4{
+  margin-bottom: 2rem;
+}
+
+.footer-right input{
+  margin-bottom: 1rem;
+  background-color: #2a2d38;
+  border: none;
+  padding: 15px;
+  outline: none;
+}
+
+.footer-right input::placeholder{
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.footer-right input:focus{
+  background-color: #1f2129;
+}
+
+.footer-right button{
+  background-color: #f2d03b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  width: 130px;
+  align-self: center;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.footer-right button:hover{
+  background-color: #fff;
+  color: #222;
+}
+
+.copyright{
+  background-color: #2a2d38;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.copyright a{
+  color: #999;
+  transition: all 0.4s;
+  font-size: 0.8rem;
+}
+
+.copyright a:hover{
+  color: #f2d03b;
+}
